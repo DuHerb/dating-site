@@ -5,7 +5,9 @@ $(document).ready(function(){
       var gender = $('input:radio[name=gender]:checked').val();
 
       var age = $('input:radio[name=age]:checked').val();
-      console.log(gender+age);
+
+      var music = $('input:radio[name=music]:checked').val();
+      console.log(gender+age+music);
     });
 
 
