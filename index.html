@@ -5,11 +5,64 @@
     <title>Celeb Dating</title>
     <script src="js/jquery-3.3.1.js"type="text/javascript"></script>
     <script src="js/bootstrap.js" type="text/javascript"></script>
-    <script src="js/jquery-3.3.1.js"type="text/javascript"></script>
+    <script src="js/scripts.js"type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css.styles.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <form id="info">
+      <div class="gender">
+        <h1>Which do you prefer?</h1>
+        <div id="gender-check" class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" name="gender" type="radio" value="male">
+            <label class="form-check-label" for="defaultCheck1">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="gender" type="radio" value="female">
+            <label class="form-check-label" for="defaultCheck1">
+              Female
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="gender" type="radio" value="either">
+            <label class="form-check-label" for="defaultCheck1">
+              Don't Care
+            </label>
+          </div>
+
+        </div>
+      </div><!-- /.gender -->
+
+      <div class="age">
+        <h1>How old are you?</h1>
+        <div id="age-check" class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" name="age" type="radio" value="18">
+            <label class="form-check-label" for="defaultCheck1">
+              18 to 25
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="age" type="radio" value="25">
+            <label class="form-check-label" for="defaultCheck1">
+              25 to 35
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" name="age" type="radio" value="35">
+            <label class="form-check-label" for="defaultCheck1">
+              35 Plus
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div><!-- /.age -->
+
+
+    </form>
 
   </body>
 </html>
