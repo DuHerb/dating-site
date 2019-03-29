@@ -29,10 +29,11 @@ $(document).ready(function(){
     return imgID
   };
 
+  //on submit, function till add .hidden to all <img> to hide any previous submits, call createID(), and remove .hidden from the newly selected <img>
   $("form").submit(function(event) {
     event.preventDefault();
     $('img').addClass("hidden");
-    
+
     var gender = $('input:radio[name=gender]:checked').val();
     var age = $('input:radio[name=age]:checked').val();
     var music = $('input:radio[name=music]:checked').val();
@@ -41,5 +42,5 @@ $(document).ready(function(){
 
     $(imgID).removeClass('hidden');
   });
-
+  
 });
