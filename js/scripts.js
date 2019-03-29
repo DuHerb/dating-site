@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  //createID builds a string that can be used to select the
+  //createID builds a string that can be used to select the image matching a user's input
   function createID(gender, age, music) {
     var imgID = "#";
 
@@ -31,14 +31,13 @@ $(document).ready(function(){
 
   $("form").submit(function(event) {
     event.preventDefault();
-
+    $('img').addClass("hidden");
+    
     var gender = $('input:radio[name=gender]:checked').val();
     var age = $('input:radio[name=age]:checked').val();
     var music = $('input:radio[name=music]:checked').val();
 
     var imgID  = createID(gender, age, music);
-
-    console.log(imgID);
 
     $(imgID).removeClass('hidden');
   });
